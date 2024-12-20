@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form_style.css">
+    
+</head>
+<body>
+    <!--Modal-->
+    <section class="modal" id="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            
+        <h3 id="modal-title">Разработка веб-приложений</h3>
+        <p>Заполните форму и мы обязательно свяжемся с вами<br> в ближайшее время для уточнения деталей</p>
+        <form action="">
+            <label><span>Ваше имя:</span><input type="text" name="username" required pattern="[A-Za-z]{6,}" placeholder="Иванов Иван Иванович"></label>
+            <label><span>Ваш e-mail: </span><input type="email" placeholder="example@mail.com"></label>
+            <label><span>Телефон: </span><input  type="tel" placeholder="+7 999 999 99 99" ></label>
+    
+            <label><span>Страна: </span><select name="" id="">
+                <option value="">Российская Федерация</option>
+                <option value="">Республика Беларусь</option>
+                <option value="">Казахстан</option>
+            </select></label>
+    
+            <label><span>Дата: </span><input type="date" required></label>
+            <label><span>Комментарий: </span><textarea name="" id=""></textarea></label>
+            <label><input type="checkbox" required> Согласен на обработку моих персональных данных</label>
+            <button type="submit" id="but">Заказать</button>
+        </form>
+    </div>
+    </section>
+</body>
+<script src="../js/form.js"></script>
+<script src="../js/lab_11_form.js"></script>
+<!--<input type="date" id="date" name="trip-start" value="2024-09-26" min="2024-09-26" max="2025-12-31" />-->
+</html>

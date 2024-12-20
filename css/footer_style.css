@@ -1,0 +1,53 @@
+/*style for footer*/
+@font-face {
+    font-family: 'serif4';
+    src: url(../fonts/serif4/static/SourceSerif4-Regular.ttf);
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'poiretOne';
+    src: url(../fonts/PoiretOne/Poiret_One/PoiretOne-Regular.ttf);
+}
+footer{
+    height: 10%;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    border: 1px, solid, black;
+    border-top: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    
+}
+.copyright{
+    margin-top: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: poiretOne;
+    display: inline-block;
+    grid-column-start: 3;
+}
+.contacts{
+    margin-top: 10pt;
+    padding-right: 10px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    grid-column-start: 5;
+}
+.contactImg{
+    width: 20pt;
+    height: 20pt;
+}
+@media(max-width: 530px){
+    .copyright{
+        font-size: 10px;
+    }
+}

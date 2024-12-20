@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.2);
+        }
+
+        p {
+            transition: background-color 0.3s ease-in-out;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .lecture-table {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .lecture-table.show {
+            display: table;
+            opacity: 1;
+        }
+
+        .student-photo {
+            transition: transform 0.5s ease-in-out;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .student-photo:hover {
+            transform: rotate(360deg);
+        }
+
+        .form-message {
+            display: none;
+            color: green;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .form-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Увеличивающийся заголовок</h1>
+
+    <p id="colorParagraph">Кликните, чтобы изменить цвет фона</p>
+
+    <button id="showLecturesButton">Показать лекции</button>
+
+    <table class="lecture-table" id="lectureTable" border="1">
+        <thead>
+            <tr>
+                <th>Лекция</th>
+                <th>Тема</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Введение в HTML</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Основы CSS</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="https://via.placeholder.com/150" alt="Студент" class="student-photo">
+
+    <form id="exampleForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Отправить</button>
+    </form>
+    <p class="form-message" id="formMessage">Форма отправлена!</p>
+
+    <script>
+        // 1. Анимация увеличения заголовка h1 при наведении мыши (уже задано в CSS)
+
+        // 2. Анимация изменения цвета фона для параграфа при клике
+        const colorParagraph = document.getElementById('colorParagraph');
+        colorParagraph.addEventListener('click', () => {
+            colorParagraph.style.backgroundColor = colorParagraph.style.backgroundColor === 'yellow' ? '' : 'yellow';
+        });
+
+        // 3. Плавное появление таблицы с лекциями при нажатии на кнопку
+        const showLecturesButton = document.getElementById('showLecturesButton');
+        const lectureTable = document.getElementById('lectureTable');
+
+        showLecturesButton.addEventListener('click', () => {
+            lectureTable.classList.toggle('show');
+        });
+
+        // 4. Анимация вращения фотографии студента при наведении мыши (уже задано в CSS)
+
+        // 5. Обработчик события для формы с анимацией сообщения
+        const exampleForm = document.getElementById('exampleForm');
+        const formMessage = document.getElementById('formMessage');
+
+        exampleForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Предотвратить отправку формы
+            formMessage.classList.add('show');
+            formMessage.style.color = 'blue';
+            setTimeout(() => {
+                formMessage.style.color = 'green';
+            }, 300);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="../css/pg2_style.css">
+    <link rel="stylesheet" href="../css/head_style.css">
+    <link rel="stylesheet" href="../css/footer_style.css">
+    <link rel="stylesheet" href="../css/form_style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoFio">
+            <div class="logo">
+
+                <img src="../imgs/logoVar1.png" class="logoImg" alt="">
+                <span>logo</span>
+            </div>
+            <div class="fio">
+                <span class="groupName">Группа: ЭФБО-03-23</span>
+                <span class="groupName">Ионов Георгий Алексеевич</span>
+            </div>
+        </div>
+
+        <nav>
+            <div class="Mbutton"><a href="../index.html">Главная</a></div>
+            <div class="Mbutton"><a href="first_semester.html">Первый семестр</a></div>
+            <div class="Mbutton"><a href="second_semester.html">Второй семестр</a></div>
+            <div class="Mbutton"><a href="">Услуги</a></div>
+            <div class="Mbutton"><a href="">Авторизация</a></div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="menu">
+            <span class="navPage">Навигация по странице</span>
+            <ol>
+
+                <li ><a class="menuItem" href="#frontend">Фронтенд</a></li>
+                <li ><a class="menuItem" href="#backend">Бэкенд</a></li>
+            </ol>
+        </div>
+
+        <div class="mainArea">
+
+            <h1 class="title">Разработка веб приложений</h1>
+
+            <div class="services">
+                <div class="serviceCard">
+                    <img src="../imgs/card1.png" class="cardImg" alt="Сайт визитка">
+                    <div><button class="cardName" data-service="Сайт визитка">Сайт визитка</button></div>
+                </div>
+
+                <div class="serviceCard">
+                    <img src="../imgs/card2_new.png" class="cardImg" alt="Корпоративный сайт">
+                    <div><button class="cardName" data-service="Корпоративный сайт">Корпоративный сайт</button></div>
+                </div>
+
+                <div class="serviceCard">
+                    <img src="../imgs/card3_new.png" class="cardImg" alt="Интернет магазин">
+                    <div><button class="cardName" data-service="Интернет магазин">Интернет магазин</button></div>
+                </div>
+            </div>
+
+            <p>Учитывая ключевые сценарии поведения, перспективное планирование, а также свежий взгляд на привычные вещи
+                — безусловно открывает новые
+                горизонты для приоретизации разума над эмоциями. Следует отметить, что синтетическое тестирование играет
+                определяющее значение для
+                системы массового участия. Также как выбранный нами инновационный путь представляет собой интересный
+                эксперимент проверки своевременного
+                выполнения сверхзадачи. Вот вам яркий пример современных тенденций — начало повседневной работы по
+                формированию позиции является качественно
+                новой ступенью соответствующих условий активизации. Разнообразный и богатый опыт говорит нам, что
+                синтетическое тестирование играет
+                определяющее значение для укрепления моральных ценностей. Прежде всего, курс на
+                социально-ориентированный национальный проект позволяет
+                оценить значение своевременного выполнения сверхзадачи. Предварительные выводы неутешительны: новая
+                модель организационной деятельности
+                однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                экономической целесообразности принимаемых
+                решений! Задача организации, в особенности же консультация с широким активом требует определения и
+                уточнения вывода текущих активов.</p>
+            <p>Учитывая ключевые сценарии поведения, перспективное планирование, а также свежий взгляд на привычные вещи
+                — безусловно открывает новые
+                горизонты для приоретизации разума над эмоциями. Следует отметить, что синтетическое тестирование играет
+                определяющее значение для
+                системы массового участия. Также как выбранный нами инновационный путь представляет собой интересный
+                эксперимент проверки своевременного
+                выполнения сверхзадачи. Вот вам яркий пример современных тенденций — начало повседневной работы по
+                формированию позиции является
+                качественно новой ступенью соответствующих условий активизации. Разнообразный и богатый опыт говорит
+                нам, что синтетическое тестирование
+                играет определяющее значение для укрепления моральных ценностей.</p>
+        </div>
+
+        <!--Modal-->
+        <section class="modal" id="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+
+                <h3 id="modal-title">Разработка веб-приложений</h3>
+                <p class="modal-text">Заполните форму и мы обязательно свяжемся с вами<br> в ближайшее время для уточнения деталей</p>
+                <form id="myform" action="">
+                    <label><span>Ваше имя:</span><input type="text" id="username" required placeholder="Иванов Иван Иванович"></label>
+                    <label><span>Ваш e-mail: </span><input type="email" id="email" placeholder="example@mail.com"></label>
+                    <label><span>Телефон: </span><input type="tel" id="phone" placeholder="+7 999 999 99 99"></label>
+
+                    <label><span>Страна: </span><select name="" id="">
+                            <option value="">Российская Федерация</option>
+                            <option value="">Республика Беларусь</option>
+                            <option value="">Казахстан</option>
+                        </select></label>
+
+                    <label><span>Дата: </span><input type="date" id="date" required></label>
+                    <div class="commentWrapper"><label class="comment"><span>Комментарий: </span><textarea id="comment" id=""></textarea></label></div>
+                    <label><input type="checkbox" required> Согласен на обработку моих персональных данных</label>
+                    <button type="submit" id="but">Заказать</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span class="copyright"> &copy; Ионов Георгий Алексеевич, 2024</span>
+        <div class="contacts">
+            <a href="https://web.telegram.org/k/"><img src="../imgs/icons8-telegram-50.png" class="contactImg"
+                    alt="vk"></a> 
+            <a href="https://web.telegram.org/k/"><img src="../imgs/icons8-vk-circled-50.png" class="contactImg"
+                    alt="tg"></a>
+        </div>
+        
+    </footer>
+    <!--<script src="../js/form.js"></script>-->
+    <script src="../js/form.js"></script>
+    <script src="../js/lab_11_form.js"></script>
+</body>
+
+</html>

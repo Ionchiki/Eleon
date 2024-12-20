@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'oswald';
+    src: url(../fonts/Oswald/static/Oswald-Light.ttf);
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'poiretOne';
+    src: url(../fonts/PoiretOne/Poiret_One/PoiretOne-Regular.ttf);
+}
+@font-face{
+    font-family: 'biz';
+    src: url(../fonts/biz/BIZUDPGothic-Regular.ttf);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+.logo{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px, solid, black;
+    border-radius: 5px;
+}
+.logoFio{
+    display: flex;
+    border: 1px, solid, black;
+    box-sizing: border-box;
+}
+.logoImg{
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.groupName{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: poiretOne;
+    font-weight: 700;
+}
+.fio{
+    margin-left: auto;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+span{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Mbutton{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 30px 10px 30px;
+    border: 1px, solid, black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: oswald;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.Mbutton:hover{
+    background-color: black;
+    color: white;
+    a{
+        color: white;
+    }
+}
+.Mbutton:active{
+    a{
+        text-decoration:line-through;
+    }
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+@media (max-width: 640px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    .Mbutton{
+        width: 100%;
+        text-align: center;
+        
+    }
+    header{
+        position: static;
+    }
+}
+
+

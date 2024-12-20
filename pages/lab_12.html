@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/head_style.css">
+    <link rel="stylesheet" href="../css/footer_style.css">
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: 'oswald';
+            src: url(../fonts/Oswald/static/Oswald-Light.ttf);
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face{
+            font-family: 'victorMono';
+            src: url(../fonts/victorMono/static/VictorMono-Regular.ttf);
+
+        }
+        footer{
+            border: 1px, solid, black;
+        }
+
+        .title{
+            font-family: victorMono;
+            margin-left: 20px;
+        }
+
+        .content{
+            margin: 40px;
+            display: inline-block;
+            padding: 10px;
+            border: 5px solid black;
+        }
+
+        .text{
+            font-family: oswald;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .tableWrapper{
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .tabSig{
+            margin-left: 20px;
+            font-family: victorMono;
+            display: block;
+            text-align: left;
+        }
+
+
+        caption {
+            caption-side: bottom;
+            padding: 10px;
+            font-weight: bold;
+        }
+  
+        thead{
+            background-color: rgb(160 160 160);
+        }
+  
+        th,
+        td {
+            border: 1px solid rgb(160 160 160);
+            padding: 8px 10px;
+        }
+  
+        .check {
+            text-align: center;
+        }
+  
+        tr{
+            transition: background-color 0.5s;
+        }
+        tr:hover{
+            background-color: rgb(160 160 160);
+        }
+  
+        tfoot th {
+            text-align: right;
+        }
+        tfoot td {
+            font-weight: bold;
+        }
+
+    </style>
+
+    <header>
+        <div class="logoFio">
+            <div class="logo">
+
+                <img src="../imgs/logoVar1.png" class="logoImg" alt="logo">
+                <span>logo</span>
+            </div>
+            <div class="fio">
+                <span class="groupName">Группа: ЭФБО-03-23</span>
+                <span class="groupName">Ионов Георгий Алексеевич</span>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="Mbutton"><a href="../index.html">Главная</a></div>
+            <div class="Mbutton"><a href="first_semester.html">Первый семестр</a></div>
+            <div class="Mbutton"><a href="second_semester.html">Второй семестр</a></div>
+            <div class="Mbutton"><a href="../pages/page2.html">Услуги</a></div>
+            <div class="Mbutton"><a href="">Авторизация</a></div>
+        </nav>
+        
+    </header>
+
+    <h1 class="title">Добро пожаловать на мой сайт</h1>
+
+    <div class="content">
+        <h1 class="text">Some content</h1>
+    </div>
+
+    <div class="content" id="clickLine">
+        <h1 class="text">Some content</h1>
+    </div>
+
+    <span class="tabSig" id="seminars"><b>Практики</b> <b id="smstr">1 семестер</b></span>
+            
+            <div class="tableWrapper">
+              <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">Номер</th>
+                      <th scope="col">Тема</th>
+                      <th scope="col">Посещение</th>
+                      <th scope="col">Выполнение</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td >Основы HTML</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td >Формы и кнопки в HTML</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td >Таблицы и интерактивные элементы HTML</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td >Основы работы с CSS</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr><th scope="row">5</th>
+                      <td >Работа с классами в CSS</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr><th scope="row">6</th>
+                      <td >Работа с сетками и разметкой в HTML</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr><th scope="row">7</th>
+                      <td >Адаптивная верстка</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr><th scope="row">8</th>
+                      <td >Bootstrap</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr><th scope="row">9</th>
+                      <td >Основы языка JavaScript</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                    <tr><th scope="row">10</th>
+                      <td >Базовые задачи на JS</td>
+                      <td class = "check"><input type="checkbox"></td>
+                      <td class = "check"><input type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <img src="../imgs/David-Lynch.jpg" width="600" alt="" id="image">
+    <footer>
+        <span class="copyright"> &copy; Ионов Георгий Алексеевич, 2024</span>
+        <div class="contacts"> 
+            <a href="https://web.telegram.org/k/"><img src="../imgs/icons8-telegram-50.png" class = "contactImg" alt=""></a>
+            <a href="https://web.telegram.org/k/"><img src="../imgs/icons8-vk-circled-50.png" class = "contactImg" alt=""></a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

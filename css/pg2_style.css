@@ -1,0 +1,152 @@
+/*style for main*/
+@font-face {
+    font-family: 'serif4';
+    src: url(../fonts/serif4/static/SourceSerif4-Regular.ttf);
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url(../fonts/Oswald/static/Oswald-Light.ttf);
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'poiretOne';
+    src: url(../fonts/PoiretOne/Poiret_One/PoiretOne-Regular.ttf);
+}@font-face{
+    font-family: 'biz';
+    src: url(../fonts/biz/BIZUDPGothic-Regular.ttf);
+}
+@font-face{
+    font-family: 'victorMono';
+    src: url(../fonts/victorMono/static/VictorMono-Regular.ttf);
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+li{
+    font-size: 18px;
+    list-style-type: none;
+}
+.menuItem:hover{
+    text-decoration: underline;
+}
+.menu{
+    width: 20%;
+    display: inline-block;
+    border-right: 1px solid black;
+    font-family: poiretOne;
+    font-weight: bold;
+}
+.navPage{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+}
+ol{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.mainArea{
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    font-family: serif4;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.serviceCard{
+    display: grid;
+    margin: auto;
+    transition: transform 0.5s;
+    row-gap: 1%;
+}
+.serviceCard:hover{
+    transform: scale(105%);
+}
+.cardName{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+    font-family: poiretOne;
+    font-weight: bold;
+    transition: color 0.5s, background-color 0.5s;
+    display: inline;
+}
+.cardName:hover{
+    background-color: black;
+    color: white;
+}
+
+.cardImg{
+    max-width: 100%;
+}
+.title{
+    margin-bottom: 30pt;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h1{
+    font-family: victorMono;
+    font-weight: 600;
+}
+p{
+    margin-left: 20px;
+    margin-bottom: 50pt;
+    font-size: 20px;
+}
+main{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px, solid, black;
+    box-sizing: border-box;
+}
+@media(max-width: 530px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+    .menu{
+        width: 100%;
+        border: none;
+        text-align: center;
+        
+    }
+    .navPage{
+        text-align: center;
+    }
+    .mainArea{
+        width: 100%;
+        border: 1px, solid, black;
+    }
+    .title{
+        text-align: center;
+    }
+    .services{
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+    }
+}
